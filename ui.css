@@ -1,0 +1,36 @@
+/* style.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #333;
+  text-align: center;
+}
+header {
+  background: #222;
+  color: white;
+  padding: 2rem;
+}
+section {
+  padding: 2rem;
+}
+.icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 3rem;
+}
+.project {
+  margin: 1rem 0;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+footer {
+  background: #222;
+  color: white;
+  padding: 1rem;
+}
