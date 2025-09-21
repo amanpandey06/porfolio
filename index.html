@@ -1,4 +1,3 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,52 +7,305 @@
   <link rel="stylesheet" href="ui.css">
   <!-- Devicon for tech icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <!-- Font Awesome for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-  <header>
-    <h1>Aman Pandey</h1>
-    <p>BTech CSE (Data Science) | AI & Full Stack Developer</p>
+  <!-- Background Animations -->
+  <div class="wave-overlay">
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+  
+  <div class="floating-shapes">
+    <div class="floating-shape"></div>
+    <div class="floating-shape"></div>
+    <div class="floating-shape"></div>
+    <div class="floating-shape"></div>
+    <div class="floating-shape"></div>
+    <div class="floating-shape"></div>
+  </div>
+  
+  <div class="light-orbs">
+    <div class="light-orb"></div>
+    <div class="light-orb"></div>
+    <div class="light-orb"></div>
+  </div>
+  
+  <div class="dna-helix">
+    <div class="helix-strand"></div>
+    <div class="helix-strand"></div>
+    <div class="helix-connect"></div>
+    <div class="helix-connect"></div>
+    <div class="helix-connect"></div>
+    <div class="helix-connect"></div>
+    <div class="helix-connect"></div>
+    <div class="helix-connect"></div>
+  </div>
+  
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-indicator" id="scrollIndicator"></div>
+  
+  <!-- Theme Toggle -->
+  <div class="theme-toggle" id="themeToggle"></div>
+  
+  <!-- Navigation -->
+  <nav id="navbar">
+    <ul>
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="home">
+    <h1 id="typingName">Aman Pandey</h1>
+    <p id="typingTitle">BTech CSE (Data Science) | AI & Full Stack Developer</p>
+    <div class="cta-buttons">
+      <a href="#about" class="cta-button">Discover My Work</a>
+      <a href="./resume.pdf" class="cta-button resume-button" download="Aman_Pandey_Resume.pdf">
+        <i class="fas fa-download"></i> Download Resume
+      </a>
+    </div>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I am a Computer Science and Engineering student specializing in Data Science. 
-    Passionate about building intelligent systems and scalable applications. 
-    Currently working on Adhigama, a super-intelligent AI tutor for high school students.</p>
-
-    <p><strong>College:</strong> [Chandigarh engineering college, Landran]</p>
-    <p><strong>CGPA:</strong> 7</p>
-  </section>
-
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="icons">
-      <i class="devicon-c-plain"></i>
-      <i class="devicon-cplusplus-plain"></i>
-      <i class="devicon-python-plain"></i>
-      <i class="devicon-nodejs-plain"></i>
-      <i class="devicon-mongodb-plain"></i>
-      <i class="devicon-mysql-plain"></i>
-      <i class="devicon-html5-plain"></i>
-      <i class="devicon-css3-plain"></i>
-      <i class="devicon-git-plain"></i>
+  <!-- About Section -->
+  <section id="about" class="fade-in slide-left">
+    <h2 class="glitch-hover">About Me</h2>
+    <div class="about-content">
+      <p>I am a passionate Computer Science and Engineering student specializing in Data Science. 
+      My journey in technology is driven by a desire to build intelligent systems and scalable applications 
+      that make a real difference in people's lives.</p>
+      
+      <p>Currently, I'm working on <strong>Adhigama</strong>, a revolutionary AI tutor designed to transform 
+      the learning experience for high school students through personalized, psychologically-adaptive education.</p>
+      
+      <div class="about-details">
+        <div class="detail-item">
+          <h3>🎓 Education</h3>
+          <p><strong>Chandigarh Engineering College, Landran</strong></p>
+          <p>BTech in Computer Science & Engineering (Data Science)</p>
+          <p><strong>CGPA:</strong> 7.0</p>
+        </div>
+        
+        <div class="detail-item">
+          <h3>💡 Focus Areas</h3>
+          <ul>
+            <li>Artificial Intelligence & Machine Learning</li>
+            <li>Full Stack Web Development</li>
+            <li>Data Science & Analytics</li>
+            <li>Educational Technology</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Linguistic Chatbot</h3>
-      <p>A multilingual chatbot to assist students and staff with queries.</p>
-    </div>
-    <div class="project">
-      <h3>Adhigama</h3>
-      <p>AI tutor designed for school students (10th–12th) that adapts psychologically and provides personalized study materials.</p>
+  <!-- Skills Section -->
+  <section id="skills" class="fade-in slide-right">
+    <h2 class="glitch-hover">Technical Skills</h2>
+    <div class="skills-container">
+      <div class="skill-item tilt-card" data-skill="C" data-level="85">
+        <i class="devicon-c-plain"></i>
+        <div class="skill-name">C</div>
+        <div class="skill-progress">
+          <div class="progress-bar" data-progress="85"></div>
+        </div>
+      </div>
+      <div class="skill-item tilt-card" data-skill="C++" data-level="80">
+        <i class="devicon-cplusplus-plain"></i>
+        <div class="skill-name">C++</div>
+        <div class="skill-progress">
+          <div class="progress-bar" data-progress="80"></div>
+        </div>
+      </div>
+      <div class="skill-item tilt-card" data-skill="Python" data-level="90">
+        <i class="devicon-python-plain"></i>
+        <div class="skill-name">Python</div>
+        <div class="skill-progress">
+          <div class="progress-bar" data-progress="90"></div>
+        </div>
+      </div>
+      <div class="skill-item tilt-card" data-skill="Node.js" data-level="75">
+        <i class="devicon-nodejs-plain"></i>
+        <div class="skill-name">Node.js</div>
+        <div class="skill-progress">
+          <div class="progress-bar" data-progress="75"></div>
+        </div>
+      </div>
+      <div class="skill-item tilt-card" data-skill="MongoDB" data-level="70">
+        <i class="devicon-mongodb-plain"></i>
+        <div class="skill-name">MongoDB</div>
+        <div class="skill-progress">
+          <div class="progress-bar" data-progress="70"></div>
+        </div>
+      </div>
+      <div class="skill-item tilt-card" data-skill="MySQL" data-level="85">
+        <i class="devicon-mysql-plain"></i>
+        <div class="skill-name">MySQL</div>
+        <div class="skill-progress">
+          <div class="progress-bar" data-progress="85"></div>
+        </div>
+      </div>
+      <div class="skill-item tilt-card" data-skill="HTML5" data-level="95">
+        <i class="devicon-html5-plain"></i>
+        <div class="skill-name">HTML5</div>
+        <div class="skill-progress">
+          <div class="progress-bar" data-progress="95"></div>
+        </div>
+      </div>
+      <div class="skill-item tilt-card" data-skill="CSS3" data-level="90">
+        <i class="devicon-css3-plain"></i>
+        <div class="skill-name">CSS3</div>
+        <div class="skill-progress">
+          <div class="progress-bar" data-progress="90"></div>
+        </div>
+      </div>
+      <div class="skill-item tilt-card" data-skill="JavaScript" data-level="85">
+        <i class="devicon-javascript-plain"></i>
+        <div class="skill-name">JavaScript</div>
+        <div class="skill-progress">
+          <div class="progress-bar" data-progress="85"></div>
+        </div>
+      </div>
+      <div class="skill-item tilt-card" data-skill="Git" data-level="80">
+        <i class="devicon-git-plain"></i>
+        <div class="skill-name">Git</div>
+        <div class="skill-progress">
+          <div class="progress-bar" data-progress="80"></div>
+        </div>
+      </div>
+      <div class="skill-item tilt-card" data-skill="React" data-level="75">
+        <i class="devicon-react-original"></i>
+        <div class="skill-name">React</div>
+        <div class="skill-progress">
+          <div class="progress-bar" data-progress="75"></div>
+        </div>
+      </div>
     </div>
   </section>
 
+  <!-- Projects Section -->
+  <section id="projects" class="fade-in slide-left">
+    <h2 class="glitch-hover">Featured Projects</h2>
+    <div class="projects-grid">
+      <div class="project tilt-card">
+        <h3>🤖 Adhigama - AI Educational Platform</h3>
+        <p>A revolutionary AI tutor designed specifically for high school students (grades 10-12). 
+        Adhigama uses advanced psychological profiling and adaptive learning algorithms to provide 
+        personalized study materials and teaching methods tailored to each student's unique learning style.</p>
+        
+        <div class="project-tech">
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">TensorFlow</span>
+          <span class="tech-tag">React</span>
+          <span class="tech-tag">Node.js</span>
+          <span class="tech-tag">MongoDB</span>
+        </div>
+        
+        <div class="project-features">
+          <h4>Key Features:</h4>
+          <ul>
+            <li>Psychological adaptation engine</li>
+            <li>Personalized learning paths</li>
+            <li>Real-time progress tracking</li>
+            <li>Interactive study materials</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="project tilt-card">
+        <h3>🌐 Linguistic Chatbot</h3>
+        <p>A sophisticated multilingual chatbot system designed to assist students and staff with 
+        their queries across multiple languages. Features natural language processing capabilities 
+        and context-aware responses for enhanced user experience.</p>
+        
+        <div class="project-tech">
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">NLP</span>
+          <span class="tech-tag">Flask</span>
+          <span class="tech-tag">SQLite</span>
+          <span class="tech-tag">JavaScript</span>
+        </div>
+        
+        <div class="project-features">
+          <h4>Key Features:</h4>
+          <ul>
+            <li>Multi-language support</li>
+            <li>Context-aware responses</li>
+            <li>Real-time chat interface</li>
+            <li>Query categorization system</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="project tilt-card">
+        <h3>📊 Data Analytics Dashboard</h3>
+        <p>A comprehensive data visualization platform built for analyzing student performance metrics 
+        and educational trends. Provides interactive charts, real-time data processing, and 
+        predictive analytics for educational institutions.</p>
+        
+        <div class="project-tech">
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">Pandas</span>
+          <span class="tech-tag">D3.js</span>
+          <span class="tech-tag">PostgreSQL</span>
+          <span class="tech-tag">Docker</span>
+        </div>
+        
+        <div class="project-features">
+          <h4>Key Features:</h4>
+          <ul>
+            <li>Interactive data visualizations</li>
+            <li>Predictive analytics models</li>
+            <li>Real-time data processing</li>
+            <li>Custom reporting system</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="fade-in slide-bottom">
+    <h2 class="glitch-hover">Let's Connect</h2>
+    <div class="contact-container">
+      <p>I'm always excited to collaborate on innovative projects and discuss new opportunities in AI and software development.</p>
+      
+      <div class="social-links">
+        <a href="mailto:amanpandeyy2006@gmail.com" class="social-link email-link" title="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/aman-pandey-837a31341" class="social-link linkedin-link" title="LinkedIn" target="_blank">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/amanpandey06" class="social-link github-link" title="GitHub" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="tel:+91-8360725071" class="social-link phone-link" title="Phone">
+          <i class="fas fa-phone"></i>
+        </a>
+      </div>
+      
+      <div class="contact-info">
+        <p><strong>📧 Email:</strong> amanpandeyy2006@gmail.com</p>
+        <p><strong>📱 Phone:</strong> +91-8360725071</p>
+        <p><strong>📍 Location:</strong> Chandigarh, India</p>
+        <p><strong>💼 Open to:</strong> Internships, Freelance Projects, Collaborations</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <p>© 2025 Aman Pandey</p>
+    <p>© 2025 Aman Pandey | Built with 💜 and modern web technologies</p>
+    <p>Crafted to inspire and innovate</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
